@@ -1,0 +1,181 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --purple: #E2B5FF;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: auto;
+  width: 100%;
+  padding: 20em;
+  display: grid;
+  gap: 2.5em;
+}
+
+/* TITLES */
+.title-banner,
+.sing-title {
+  background-color: var(--purple);
+  color: var(--black);
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75em;
+  border-radius: 0.5em;
+}
+
+.surv-title {
+  background-color: var(--purple);
+  color: var(--black);
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75em;
+  border-radius: 0.5em;
+}
+
+.safe-title {
+  background-color: var(--purple);
+  color: var(--black);
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75em;
+  border-radius: 0.5em;
+}
+
+/* TEXT */
+.safe-text {
+  background-color: var(--purple);
+  color: var(--black);
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+  font-size: 1.1em;
+  border-radius: 0.5em;
+}
+
+/* IMAGE PLACEHOLDER */
+img {
+  width: 100%;
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+
+/* IMAGE GRIDS */
+.singapore-image-grid,
+.safety-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.singapore-image-grid img,
+.safety-image-grid img {
+  width: 100%;
+}
+
+/* GRID AREAS */
+#smartCitiesTitle     { grid-area: Tban; }
+#smartCitiesImage     { grid-area: Timage; }
+#singaporeTitle       { grid-area: Sban; }
+#singaporeImage       { grid-area: Simage; }
+#streetcameraimage    { grid-area: SI; }
+#highwaycameraimage   { grid-area: HI; }
+#surveillanceTitle    { grid-area: Tsur; }
+#surveillanceText     { grid-area: TStext; }
+#faceregimage         { grid-area: FR; }
+#nineeighty           { grid-area: NEI; }
+#safetyTitle          { grid-area: Tsafe; }
+#IDCW1                { grid-area: CW1; }
+#IDCW2                { grid-area: CW2; }
+
+/* RESPONSIVE */
+
+/* mobile */
+
+.main-container {
+    display: grid;
+    grid-template-areas:
+      "Timage Timage Timage Timage"
+      "Tban   Tban   Tban   Tban"
+      ".      .      .      ."
+      "Sban   Sban   Sban   Sban"
+      "Simage Simage Simage Simage"
+      ".      .      .      ."
+      "SI     SI     SI     SI"
+      "SI     SI     SI     SI"
+      "SI     SI     SI     SI"
+      ".      .      .      ."
+      "Tsur   Tsur   Tsur   Tsur"
+      "TStext TStext TStext TStext"
+      "FR     FR     FR     FR"
+      "NEI      NEI    NEI    NEI"
+      ".      .      .      ."
+      "Tsafe  Tsafe  Tsafe  Tsafe"
+      "CW1    CW1    CW1    CW1"
+      "CW2    CW2    CW2    CW2"
+  }
+}
+
+/* Ipad */
+@media (min-width: 50em) {
+    .main-container {
+    display: grid;
+    grid-template-areas:
+      "Timage Timage Timage Timage Timage Timage"
+      "Tban   Tban   Tban   Tban   Tban   Tban"
+      ".      .      .      .      .      ."
+      "Sban   Sban   Sban   Sban   Sban   Sban"
+      "Simage Simage Simage Simage Simage Simage"
+      ".      .      .      .      .      ."
+      "SI     SI     SI     HI     HI     HI"
+      "SI     SI     SI     HI     HI     HI"
+      ".      .      .      .      .      ."
+      "Tsur   Tsur   Tsur   Tsur   Tsur   Tsur"
+      "TStext TStext TStext TStext TStext TStext"
+      "FR     FR     FR     FR     FR     FR"
+      "NEI      NEI    NEI    NEI    NEI    NEI"
+      ".      .      .      .      .      ."
+      "Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe"
+      "CW1    CW1    CW1    CW1    CW1    CW1"
+      "CW2    CW2    CW2    CW2    CW2    CW2"
+  }
+}
+
+
+/* desktop */
+@media (min-width: 75em) {
+  .main-container {
+    display: grid;
+    grid-template-areas:
+      "Timage Timage Timage Timage Timage Timage Timage Timage Timage Timage Timage Timage"
+      "Tban   Tban   Tban   Tban   Tban   Tban   Tban   Tban   Tban   Tban   Tban   Tban"
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "Sban   Sban   Sban   Sban   Sban   Sban   Sban   Sban   Sban   Sban   Sban   Sban"
+      "Simage Simage Simage Simage Simage Simage Simage Simage Simage Simage Simage Simage"
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "SI     SI     SI     SI     SI     SI     HI     HI     HI     HI     HI     HI"
+      "SI     SI     SI     SI     SI     SI     HI     HI     HI     HI     HI     HI"
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur   Tsur"
+      "TStext TStext TStext TStext TStext TStext TStext TStext TStext TStext TStext TStext"
+      "FR     FR     FR     FR     FR     FR     FR     FR     FR     FR     FR     FR"
+      ".      NEI    NEI    NEI    NEI    NEI    NEI    NEI    NEI    NEI    NEI    ."
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe  Tsafe"
+      "CW1    CW1    CW1    CW1    CW1    CW1    CW1    CW1    CW1    CW1    CW1    CW1"
+      "CW2    CW2    CW2    CW2    CW2    CW2    CW2    CW2    CW2    CW2    CW2    CW2"
+  }
+}
