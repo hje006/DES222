@@ -67,18 +67,43 @@ body {
 }
 
 /* IMAGE PLACEHOLDER */
-img {
+#smartCitiesImage {
+    width:100%;
+    max-height: 30em;
+    border-radius: 0.5em;
+    object-fit: cover;
+}
+#singaporeImage {
+    width: 100%;
+    border-radius: 0.5em;
+    object-fit: cover;
+}
+
+#highwaycameraimage {
+    max-width: 100%;
+    border-radius: 0.5em;
+    object-fit: cover;
+}
+
+#streetcameraimage{
+    max-width: 100%;
+    border-radius: 0.5em;
+    object-fit: cover;
+    
+}
+/* BACKUP IMAGE CODE INCASE SIZING BREAKS
+    img {
   width: 100%;
   border-radius: 0.5em;
   object-fit: cover;
 }
-
+*/
 /* IMAGE GRIDS */
 .singapore-image-grid,
 .safety-image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
 }
 
 .singapore-image-grid img,
@@ -128,7 +153,6 @@ img {
         "Tsafe  Tsafe  Tsafe  Tsafe"
         "CW1    CW1    CW1    CW1"
         "CW2    CW2    CW2    CW2"
-}
 }
 
 /* Ipad */
