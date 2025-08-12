@@ -108,25 +108,28 @@ img {
 .main-container {
     display: grid;
     grid-template-areas:
-      "Timage Timage Timage Timage"
-      "Tban   Tban   Tban   Tban"
-      ".      .      .      ."
-      "Sban   Sban   Sban   Sban"
-      "Simage Simage Simage Simage"
-      ".      .      .      ."
-      "SI     SI     SI     SI"
-      "SI     SI     SI     SI"
-      "SI     SI     SI     SI"
-      ".      .      .      ."
-      "Tsur   Tsur   Tsur   Tsur"
-      "TStext TStext TStext TStext"
-      "FR     FR     FR     FR"
-      "NEI      NEI    NEI    NEI"
-      ".      .      .      ."
-      "Tsafe  Tsafe  Tsafe  Tsafe"
-      "CW1    CW1    CW1    CW1"
-      "CW2    CW2    CW2    CW2"
-  }
+        "Timage Timage Timage Timage"
+        "Tban   Tban   Tban   Tban"
+        ".      .      .      ."
+        "Sban   Sban   Sban   Sban"
+        "Simage Simage Simage Simage"
+        ".      .      .      ."
+        "SI     SI     SI     SI"
+        "SI     SI     SI     SI"
+        "SI     SI     SI     SI"
+        "HI     HI     HI     HI"
+        "HI     HI     HI     HI"
+        "HI     HI     HI     HI"
+        ".      .      .      ."
+        "Tsur   Tsur   Tsur   Tsur"
+        "TStext TStext TStext TStext"
+        "FR     FR     FR     FR"
+        "NEI      NEI    NEI    NEI"
+        ".      .      .      ."
+        "Tsafe  Tsafe  Tsafe  Tsafe"
+        "CW1    CW1    CW1    CW1"
+        "CW2    CW2    CW2    CW2"
+}
 }
 
 /* Ipad */
